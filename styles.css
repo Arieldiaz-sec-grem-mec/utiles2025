@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+    /* Agregar un poco de espacio en dispositivos móviles */
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    /* Asegura que los inputs ocupen todo el ancho disponible */
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    /* Hacer que el botón ocupe todo el ancho en pantallas pequeñas */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="submit"] {
+    background-color: #008CBA;
+}
+
+input[type="submit"]:hover {
+    background-color: #007bb5;
+}
+
+/* Barra de progreso */
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Media Queries para Responsividad */
+
+/* Pantallas pequeñas (móviles en orientación vertical) */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+        /* Reducir el padding en pantallas pequeñas */
+        width: 100%;
+        /* Asegura que ocupe todo el ancho */
+        max-width: 100%;
+        /* El formulario no tendrá un ancho máximo, se adapta al 100% */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        /* Reducir tamaño de fuente del título */
+    }
+
+    input,
+    textarea,
+    button {
+        font-size: 1rem;
+        /* Aumentar el tamaño de fuente para facilitar la lectura */
+    }
+
+    button {
+        padding: 12px;
+        /* Botón más grande para facilitar su toque en pantallas táctiles */
+    }
+
+    /* Ajustar la barra de progreso */
+    .progress-container {
+        height: 8px;
+        /* Reducir la altura de la barra de progreso en pantallas pequeñas */
+    }
+}
+
+/* Pantallas medianas (tabletas en orientación vertical) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .form-container {
+        width: 80%;
+        /* El formulario ocupará un 80% del ancho de la pantalla */
+        max-width: 600px;
+        /* Establecer un ancho máximo en dispositivos más grandes */
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input,
+    textarea,
+    button {
+        font-size: 1.1rem;
+    }
+
+    button {
+        padding: 12px;
+    }
+
+    .progress-container {
+        height: 10px;
+        /* Mantener la altura de la barra de progreso */
+    }
+}
+
+/* Pantallas grandes (desktops) */
+@media (min-width: 1025px) {
+    .form-container {
+        width: 50%;
+        /* El formulario ocupará el 50% del ancho en pantallas grandes */
+        max-width: 600px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input,
+    textarea,
+    button {
+        font-size: 1.2rem;
+    }
+
+    .progress-container {
+        height: 12px;
+        /* La barra de progreso puede ser un poco más alta en pantallas grandes */
+    }
+}
