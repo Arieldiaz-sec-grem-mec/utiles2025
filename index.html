@@ -3,93 +3,97 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.80">
-    <title>Formulario de Consulta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Mejorado</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="form-container">
-        <h1>Formulario de Consulta</h1>
-        <form id="myForm"
-            action="https://script.google.com/macros/s/AKfycbz2hNAwZ_d1e4mKvdqu1m-bbItvwCIfQ2ECB2nTtWFTSj7xeshJO0hy0wn0cubKG0L0ow/exec"
-            method="POST" enctype="multipart/form-data">
-            <label for="nombreApellido">Nombre y Apellido</label>
-            <input type="text" id="nombreApellido" name="nombre_apellido" required>
+        <h1>Suscripcion a beneficio de utiles 2025</h1>
+        <form id="registro-form">
+            <div class="form-group">
+                <input type="text" id="afiliado" name="afiliado" placeholder="INGRESE AFILIADO" required>
+            </div>
 
-            <label for="afiliado">Número de Afiliado</label>
-            <input type="text" id="afiliado" name="afiliado" required>
+            <div class="form-group">
+                <input type="text" id="nombre_apellido" name="nombre_apellido" placeholder="INGRESE NOMBRE Y APELLIDO"
+                    required>
+            </div>
 
-            <label for="dni">DNI</label>
-            <input type="text" id="dni" name="dni" required>
+            <div class="form-group">
+                <input type="number" id="dni" name="dni" placeholder="INGRESE DNI" required>
+            </div>
 
-            <label for="telefono">Teléfono</label>
-            <input type="text" id="telefono" name="telefono" required>
+            <div class="form-group">
+                <input type="tel" id="telefono" name="telefono" placeholder="INGRESE TELÉFONO" required>
+            </div>
 
-            <label for="nombreHijo">Nombre del Hijo</label>
-            <input type="text" id="nombreHijo" name="nombre_hijo">
+            <div class="form-group">
+                <input type="text" id="nombre_hijo" name="nombre_hijo" placeholder="INGRESE NOMBRE DEL HIJO" required>
+            </div>
 
-            <label for="edad">Edad</label>
-            <input type="text" id="edad" name="edad">
+            <div class="form-group">
+                <input type="number" id="edad" name="edad" placeholder="INGRESE EDAD" required>
+            </div>
 
-            <label for="grado">Grado</label>
-            <input type="text" id="grado" name="grado">
+            <div class="form-group">
+                <input type="text" id="grado" name="grado" placeholder="INGRESE GRADO" required>
+            </div>
 
-            <label for="talle">Talle</label>
-            <input type="text" id="talle" name="talle">
+            <div class="form-group">
+                <input type="text" id="talle" name="talle" placeholder="INGRESE TALLE" required>
+            </div>
 
-            <label for="observaciones">Observaciones</label>
-            <textarea id="observaciones" name="observaciones"></textarea>
+            <div class="form-group">
+                <textarea id="observaciones" name="observaciones" rows="4"
+                    placeholder="INGRESE OBSERVACIONES"></textarea>
+            </div>
 
-            <label for="empresa">Empresa</label>
-            <select id="empresa" name="empresa" required>
-                <option value="cliba caba">cliba caba</option>
-                <option value="urbaser moron">urbaser moron</option>
-                <option value="sbase">sbase</option>
-                <option value="cliba san isidro">cliba san isidro</option>
-                <option value="rinket trail">rinket trail</option>
-                <option value="martin y martin san justo">martin y martin san justo</option>
-                <option value="cliba caba">cliba caba</option>
-                <option value="tte olivos martelli">tte olivos martelli</option>
-                <option value="olivos tigre">olivos tigre</option>
-                <option value="hesurmet">hesurmet</option>
-                <option value="coop gest ltda moreno">coop gest ltda moreno</option>
-                <option value="dorinka">dorinka</option>
-                <option value="sertec">sertec</option>
-                <option value="aesa">aesa</option>
-                <option value="farmacity">farmacity</option>
-                <option value="remolques y servicios">remolques y servicios</option>
-                <option value="sbase">sbase</option>
-                <option value="chamical">chamical</option>
-                <option value="solbayres">solbayres</option>
-                <option value="macroser">macroser</option>
-                <option value="covelia lomas">covelia lomas</option>
-                <option value="sbase">sbase</option>
-                <option value="ashira mym caba">ashira mym caba</option>
-                <option value="deltacom">deltacom</option>
-                <option value="coop.gest.ltda caba">coop.gest.ltda caba</option>
-                <option value="oca log">oca log</option>
-                <option value="santa elena">santa elena</option>
-                <option value="ecociudad">ecociudad</option>
-                <option value="suplychay logistica">suplychay logistica</option>
-                <option value="covelia san martin">covelia san martin</option>
-                <option value="nittida">nittida</option>
-                <option value="dakota">dakota</option>
-                <option value="lusa">lusa</option>
-                <option value="urbasur">urbasur</option>
-                <option value="cont.hugo">cont.hugo</option>
-                <option value="logisu">logisu</option>
-                <option value="solbayres">solbayres</option>
-                <option value="covelia lanus">covelia lanus</option>
-                <option value="serveco">serveco</option>
-                <option value="servicio lucio">servicio lucio</option>
-            </select>
+            <div class="form-group">
+                <select id="empresa" name="empresa" required>
+                    <option value="" disabled selected>SELECCIONAR EMPRESA</option>
+                    <option value="cliba caba">CLIBA CABA</option>
+                    <option value="urbaser moron">URBASER MORON</option>
+                    <option value="sbase">SBASE</option>
+                    <option value="cliba san isidro">CLIBA SAN ISIDRO</option>
+                    <option value="rinket trail">RINKET TRAIL</option>
+                    <option value="martin y martin san justo">MARTIN Y MARTIN SAN JUSTO</option>
+                    <option value="tte olivos martelli">TTE OLIVOS MARTELLI</option>
+                    <option value="olivos tigre">OLIVOS TIGRE</option>
+                    <option value="hesurmet">HESURMET</option>
+                    <option value="coop gest ltda moreno">COOP GEST LTDA MORENO</option>
+                    <option value="dorinka">DORINKA</option>
+                    <option value="sertec">SERTEC</option>
+                    <option value="aesa">AESA</option>
+                    <option value="farmacity">FARMACITY</option>
+                    <option value="remolques y servicios">REMOLQUES Y SERVICIOS</option>
+                    <option value="chamical">CHAMICAL</option>
+                    <option value="solbayres">SOLBAYRES</option>
+                    <option value="macroser">MACROSER</option>
+                    <option value="covelia lomas">COVELIA LOMAS</option>
+                    <option value="ashira mym caba">ASHIRA MYM CABA</option>
+                    <option value="deltacom">DELTACOM</option>
+                    <option value="coop.gest.ltda caba">COOP.GEST.LTDA CABA</option>
+                    <option value="oca log">OCA LOG</option>
+                    <option value="santa elena">SANTA ELENA</option>
+                    <option value="ecociudad">ECOCIUDAD</option>
+                    <option value="suplychay logistica">SUPLYCHAY LOGISTICA</option>
+                    <option value="covelia san martin">COVELIA SAN MARTIN</option>
+                    <option value="nittida">NITTIDA</option>
+                    <option value="dakota">DAKOTA</option>
+                    <option value="lusa">LUSA</option>
+                    <option value="urbasur">URBASUR</option>
+                    <option value="cont.hugo">CONT.HUGO</option>
+                    <option value="logisu">LOGISU</option>
+                    <option value="serveco">SERVECO</option>
+                    <option value="servicio lucio">SERVICIO LUCIO</option>
+                </select>
+            </div>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" id="submit-btn">ENVIAR</button>
+            <p id="response-message"></p>
         </form>
-        <div class="progress-container" style="display:none;">
-            <div class="progress-bar"></div>
-        </div>
     </div>
     <script src="script.js"></script>
 </body>
