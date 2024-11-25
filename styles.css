@@ -1,63 +1,44 @@
 /* Estilo base del cuerpo */
 body {
     font-family: Arial, sans-serif;
-    /* Fuente general del sitio */
     background: url('arielfoto.jpg') no-repeat center center fixed;
-    /* Fondo con la imagen centrada y fija */
     background-size: cover;
-    /* La imagen cubre todo el área */
     margin: 0;
-    /* Quita el margen predeterminado */
     padding: 0;
-    /* Quita el relleno predeterminado */
-    color: #f1f1f1;
-    /* Color de texto claro para mejor visibilidad */
 }
 
 /* Contenedor principal del formulario */
 .form-container {
     max-width: 600px;
-    /* Ancho máximo del formulario */
     margin: 50px auto;
-    /* Centra el formulario vertical y horizontalmente */
-    background: rgba(255, 255, 255, 0.2);
-    /* Fondo blanco con transparencia */
-    backdrop-filter: blur(8px);
-    /* Efecto de desenfoque en el fondo */
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo oscuro y semitransparente */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    /* Sombra para destacar el contenedor */
-    border-radius: 12px;
-    /* Bordes redondeados */
+    border-radius: 8px;
     padding: 20px;
-    /* Espaciado interno */
+    backdrop-filter: blur(10px);
+    /* Desenfoque del fondo */
 }
 
 /* Título principal */
 h1 {
     text-align: center;
-    /* Centra el texto del título */
-    color: #f1f1f1;
-    /* Color claro para visibilidad sobre el fondo */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    /* Sombra para destacar el texto */
+    color: #ffffff;
+    /* Texto blanco */
 }
 
 /* Grupo individual del formulario */
 .form-group {
     margin-bottom: 15px;
-    /* Espaciado entre campos */
 }
 
 /* Etiquetas de los campos */
 label {
     display: block;
-    /* Cada etiqueta ocupa una línea completa */
     font-weight: bold;
-    /* Negrita para destacar */
     margin-bottom: 5px;
-    /* Espacio entre la etiqueta y el campo */
-    color: #e0ffe0;
-    /* Color claro con tono verde */
+    color: #a6ff99;
+    /* Verde claro para destacar sobre fondo oscuro */
 }
 
 /* Campos de entrada, listas desplegables y áreas de texto */
@@ -65,21 +46,17 @@ input,
 select,
 textarea {
     width: 95%;
-    /* Los campos ocupan el 95% del ancho del contenedor */
     padding: 10px;
-    /* Relleno interno para agrandar los campos */
-    border: 1px solid #99d699;
-    /* Borde verde claro */
-    border-radius: 8px;
-    /* Bordes redondeados */
+    border: 1px solid #444444;
+    /* Borde gris oscuro */
+    border-radius: 6px;
     font-size: 14px;
-    /* Tamaño de texto estándar */
-    color: #333333;
-    /* Color del texto */
-    background-color: rgba(255, 255, 255, 0.7);
-    /* Fondo blanco semitransparente */
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    /* Efecto de profundidad interno */
+    color: #ffffff;
+    /* Texto blanco */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo oscuro semitransparente */
+    box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.1);
+    /* Sutil profundidad interna */
 }
 
 /* Estilo de los campos cuando tienen el foco (clic o selección) */
@@ -87,57 +64,39 @@ input:focus,
 select:focus,
 textarea:focus {
     outline: none;
-    /* Quita el borde adicional de foco */
     border-color: #3b82f6;
-    /* Cambia el color del borde a azul */
+    /* Borde azul */
     box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
-    /* Efecto de resplandor azul */
 }
 
 /* Estilo especial para áreas de texto */
 textarea {
     resize: none;
-    /* Evita que el usuario cambie el tamaño del área de texto */
 }
 
 /* Botón de envío */
 button {
     width: 100%;
-    /* Ocupa todo el ancho del contenedor */
-    background-color: #4caf50;
-    /* Fondo verde brillante */
+    background-color: #3b82f6;
     color: white;
-    /* Texto blanco */
     border: none;
-    /* Sin bordes */
     padding: 10px;
-    /* Espaciado interno */
     font-size: 16px;
-    /* Tamaño del texto */
     border-radius: 6px;
-    /* Bordes redondeados */
     cursor: pointer;
-    /* Cambia el cursor a una mano al pasar por encima */
     transition: background-color 0.3s;
-    /* Suaviza el cambio de color al pasar el mouse */
 }
 
 /* Cambia el color del botón al pasar el mouse */
 button:hover {
-    background-color: #3a9a3a;
-    /* Verde más oscuro */
+    background-color: #2563eb;
 }
 
 /* Mensaje de respuesta (éxito o error) */
 #response-message {
     text-align: center;
-    /* Centra el texto del mensaje */
     margin-top: 10px;
-    /* Espaciado superior */
     font-weight: bold;
-    /* Texto en negrita */
-    color: #e0ffe0;
-    /* Color claro con tono verde */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    /* Sombra para destacar el texto */
+    color: #ffffff;
+    /* Texto blanco */
 }
