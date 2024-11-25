@@ -4,56 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Registro</title>
+    <title>Formulario de Consulta</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="form-container">
-        <h1>Formulario de Registro</h1>
-        <form id="registroForm"
+        <h1>Formulario de Consulta</h1>
+        <form id="myForm"
             action="https://script.google.com/macros/s/AKfycbz2hNAwZ_d1e4mKvdqu1m-bbItvwCIfQ2ECB2nTtWFTSj7xeshJO0hy0wn0cubKG0L0ow/exec"
-            method="POST">
-            <label for="afiliado">Afiliado:</label>
+            method="POST" enctype="multipart/form-data">
+            <label for="nombreApellido">Nombre y Apellido</label>
+            <input type="text" id="nombreApellido" name="nombre_apellido" required>
+
+            <label for="afiliado">Número de Afiliado</label>
             <input type="text" id="afiliado" name="afiliado" required>
 
-            <label for="nombre_apellido">Nombre y Apellido:</label>
-            <input type="text" id="nombre_apellido" name="nombre_apellido" required>
-
-            <label for="dni">DNI:</label>
+            <label for="dni">DNI</label>
             <input type="text" id="dni" name="dni" required>
 
-            <label for="telefono">Teléfono:</label>
+            <label for="telefono">Teléfono</label>
             <input type="text" id="telefono" name="telefono" required>
 
-            <label for="nombre_hijo">Nombre (hijo):</label>
-            <input type="text" id="nombre_hijo" name="nombre_hijo" required>
+            <label for="nombreHijo">Nombre del Hijo</label>
+            <input type="text" id="nombreHijo" name="nombre_hijo">
 
-            <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad" required>
+            <label for="edad">Edad</label>
+            <input type="text" id="edad" name="edad">
 
-            <label for="grado">Grado:</label>
-            <input type="text" id="grado" name="grado" required>
+            <label for="grado">Grado</label>
+            <input type="text" id="grado" name="grado">
 
-            <label for="talle">Talle:</label>
-            <input type="text" id="talle" name="talle" required>
+            <label for="talle">Talle</label>
+            <input type="text" id="talle" name="talle">
 
-            <label for="observaciones">Observaciones:</label>
+            <label for="observaciones">Observaciones</label>
             <textarea id="observaciones" name="observaciones"></textarea>
 
-            <label for="empresa">Empresa:</label>
-            <input type="text" id="empresa" name="empresa" required>
+            <label for="empresa">Empresa</label>
+            <select id="empresa" name="empresa" required>
+                <option value="cliba caba">cliba caba</option>
+                <option value="urbaser moron">urbaser moron</option>
+                <option value="sbase">sbase</option>
+                <option value="cliba san isidro">cliba san isidro</option>
+                <option value="rinket trail">rinket trail</option>
+                <option value="martin y martin san justo">martin y martin san justo</option>
+                <option value="cliba caba">cliba caba</option>
+                <option value="tte olivos martelli">tte olivos martelli</option>
+                <option value="olivos tigre">olivos tigre</option>
+                <option value="hesurmet">hesurmet</option>
+                <option value="coop gest ltda moreno">coop gest ltda moreno</option>
+                <option value="dorinka">dorinka</option>
+                <option value="sertec">sertec</option>
+                <option value="aesa">aesa</option>
+                <option value="farmacity">farmacity</option>
+                <option value="remolques y servicios">remolques y servicios</option>
+                <option value="sbase">sbase</option>
+                <option value="chamical">chamical</option>
+                <option value="solbayres">solbayres</option>
+                <option value="macroser">macroser</option>
+                <option value="covelia lomas">covelia lomas</option>
+                <option value="sbase">sbase</option>
+                <option value="ashira mym caba">ashira mym caba</option>
+                <option value="deltacom">deltacom</option>
+                <option value="coop.gest.ltda caba">coop.gest.ltda caba</option>
+                <option value="oca log">oca log</option>
+                <option value="santa elena">santa elena</option>
+                <option value="ecociudad">ecociudad</option>
+                <option value="suplychay logistica">suplychay logistica</option>
+                <option value="covelia san martin">covelia san martin</option>
+                <option value="nittida">nittida</option>
+                <option value="dakota">dakota</option>
+                <option value="lusa">lusa</option>
+                <option value="urbasur">urbasur</option>
+                <option value="cont.hugo">cont.hugo</option>
+                <option value="logisu">logisu</option>
+                <option value="solbayres">solbayres</option>
+                <option value="covelia lanus">covelia lanus</option>
+                <option value="serveco">serveco</option>
+                <option value="servicio lucio">servicio lucio</option>
+            </select>
 
             <button type="submit">Enviar</button>
         </form>
-
-        <!-- Barra de progreso -->
-        <div id="progressContainer" class="progress-container" style="display: none;">
-            <div id="progressBar" class="progress-bar"></div>
+        <div class="progress-container" style="display:none;">
+            <div class="progress-bar"></div>
         </div>
-
     </div>
-
     <script src="script.js"></script>
 </body>
 
