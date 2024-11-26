@@ -11,7 +11,7 @@ body {
 .form-container {
     max-width: 600px;
     margin: none;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.15);
     /* Fondo oscuro y semitransparente */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
